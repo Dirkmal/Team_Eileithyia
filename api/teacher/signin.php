@@ -1,15 +1,8 @@
 <?php
     use ActiveRecord\ActiveRecordException;
-    header("Access-Control-Allow-Origin: *"); 
-    header("Access-Control-Max-Age: 1000");
-    header("Access-Control-Allow-Headers: X-Requested-With, Content-Type, Origin, Authorization, Accept, Client-Security-Token, Accept-Encoding");
-    header("Access-Control-Allow-Methods: POST");
-    header("Content-Type: application/json; charset=UTF-8");
-    header("Access-Control-Allow-Credentials: true");
-
+    
     require_once '../../config/ar_config.php';
-    require_once '../../config/connect.php';
-    require_once '../../config/auth.php';
+    require_once '../../config/controller.php';
 
     $control = new Connect;
     $auth_obj = new Auth;

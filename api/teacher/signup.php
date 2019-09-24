@@ -1,7 +1,8 @@
 <?php
     use ActiveRecord\ActiveRecordException;
 
-    require_once('../../config/controller.php');
+    require_once '../../config/ar_config.php';
+    require_once '../../config/controller.php';
 
     $control = new Controller;
 
